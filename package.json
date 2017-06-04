@@ -5,7 +5,7 @@
     "startserver": "node_modules/.bin/babel-node --presets react,es2015 src/server.js",
     "startdev": "webpack-dev-server",
     "postinstall": "webpack -p",
-    "start": "node src/server.js"
+    "start": "node_modules/.bin/babel-node --presets react,es2015 src/server.js"
   },
   "dependencies": {
     "babel-cli": "6.11.x",
