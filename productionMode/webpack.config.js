@@ -18,7 +18,6 @@ module.exports = {
             }
         }]
     },
-
     devServer: {
         contentBase: './src/static'
     }
