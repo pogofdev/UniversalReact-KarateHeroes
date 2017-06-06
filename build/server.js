@@ -45,7 +45,7 @@ app.get('*', (req, res) => {
                 res.status(404);
             }
 
-            // render the index template with the embedded React markup
+            // render the index.js template with the embedded React markup
             return res.render('index', { markup });
         }
     );
