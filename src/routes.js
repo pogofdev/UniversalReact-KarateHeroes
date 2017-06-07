@@ -9,12 +9,12 @@ import Authentication from './shared/Authentication';
 import SignIn from './containers/SignIn';
 
 const routes = (
-
-        <Route path="/" component={Layout}>
-            <IndexRoute component={Authentication(IndexPage)}/>
-            <Route path="sign-in" component={SignIn}/>
-            <Route path="*" component={NotFoundPage}/>
-        </Route>
+    <Route path="/" component={Layout}>
+        <IndexRoute component={IndexPage}/>
+        <Route path="sign-in" component={SignIn}/>
+        <Route path="athlete/:id" component={AthletePage}/>
+        <Route path="*" component={NotFoundPage}/>
+    </Route>
 
 );
 
